@@ -11,6 +11,12 @@ paths:
     /v1.0/enterprise-projects/{enterprise_project_id}/resources-migrate:
         POST:
             tag: EPS
+    /v3/scm/{resource_id}/tags:
+        GET:
+            tag: CCM
+    /v3/scm/{resource_id}/tags/action:
+        POST:
+            tag: CCM
     /v3/scm/certificates/{cert_id}/unsubscribe:
         DELETE:
             tag: CCM

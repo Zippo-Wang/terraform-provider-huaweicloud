@@ -1,6 +1,6 @@
 info:
     version: ""
-    title: resource_huaweicloud_identity_policy
+    title: resource_huaweicloud_identityv5_policy
     description: ""
 schemes:
     - https
@@ -23,6 +23,4 @@ paths:
             tag: IAM
     /v5/policies/{policy_id}/versions/{version_id}:
         DELETE:
-            tag: IAM
-        GET:
             tag: IAM

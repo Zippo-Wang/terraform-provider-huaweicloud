@@ -1,0 +1,20 @@
+info:
+    version: ""
+    title: resource_huaweicloud_ccm_csr
+    description: ""
+schemes:
+    - https
+host: huaweicloud.com
+tags:
+    - name: CCM
+paths:
+    /v3/scm/csr:
+        POST:
+            tag: CCM
+    /v3/scm/csr/{id}:
+        DELETE:
+            tag: CCM
+        GET:
+            tag: CCM
+        PUT:
+            tag: CCM

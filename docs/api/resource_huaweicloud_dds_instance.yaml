@@ -71,10 +71,16 @@ paths:
     /v3/{project_id}/instances/{instance_id}/modify-security-group:
         POST:
             tag: DDS
+    /v3/{project_id}/instances/{instance_id}/mongos-node:
+        DELETE:
+            tag: DDS
     /v3/{project_id}/instances/{instance_id}/monitoring-by-seconds/switch:
         GET:
             tag: DDS
         PUT:
+            tag: DDS
+    /v3/{project_id}/instances/{instance_id}/nodes:
+        DELETE:
             tag: DDS
     /v3/{project_id}/instances/{instance_id}/remark:
         PUT:

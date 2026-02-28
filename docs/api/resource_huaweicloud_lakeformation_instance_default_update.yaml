@@ -1,0 +1,13 @@
+info:
+    version: ""
+    title: resource_huaweicloud_lakeformation_instance_default_update
+    description: ""
+schemes:
+    - https
+host: huaweicloud.com
+tags:
+    - name: LakeFormation
+paths:
+    /v1/{project_id}/instances/{instance_id}/default:
+        POST:
+            tag: LakeFormation

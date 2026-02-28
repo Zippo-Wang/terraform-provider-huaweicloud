@@ -1,0 +1,13 @@
+info:
+    version: ""
+    title: resource_huaweicloud_lakeformation_instance_recover
+    description: ""
+schemes:
+    - https
+host: huaweicloud.com
+tags:
+    - name: LakeFormation
+paths:
+    /v1/{project_id}/instances/{instance_id}/recover:
+        POST:
+            tag: LakeFormation
