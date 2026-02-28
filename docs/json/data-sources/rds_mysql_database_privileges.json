@@ -31,7 +31,7 @@
               },
               "users": {
                 "type": [
-                  "set",
+                  "list",
                   [
                     "object",
                     {

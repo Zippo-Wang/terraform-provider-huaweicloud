@@ -1,0 +1,72 @@
+{
+  "provider_schemas": {
+    "huaweicloud/huaweicloud": {
+      "data_source_schemas": {
+        "huaweicloud_oms_migration_sync_tasks": {
+          "block": {
+            "attributes": {
+              "id": {
+                "type": "string",
+                "computed": true
+              },
+              "region": {
+                "type": "string",
+                "computed": true
+              },
+              "status": {
+                "type": "string",
+                "optional": true
+              },
+              "tasks": {
+                "type": [
+                  "list",
+                  [
+                    "object",
+                    {
+                      "app_id": "string",
+                      "consistency_check": "string",
+                      "create_time": "number",
+                      "description": "string",
+                      "dst_bucket": "string",
+                      "dst_region": "string",
+                      "dst_storage_policy": "string",
+                      "enable_kms": "bool",
+                      "enable_metadata_migration": "bool",
+                      "enable_restore": "bool",
+                      "last_start_time": "number",
+                      "object_overwrite_mode": "string",
+                      "source_cdn": [
+                        "list",
+                        [
+                          "object",
+                          {
+                            "authentication_type": "string",
+                            "domain": "string",
+                            "protocol": "string"
+                          }
+                        ]
+                      ],
+                      "src_bucket": "string",
+                      "src_cloud_type": "string",
+                      "src_region": "string",
+                      "status": "string",
+                      "sync_task_id": "string"
+                    }
+                  ]
+                ],
+                "computed": true
+              }
+            }
+          },
+          "product": {
+            "short": "OMS",
+            "name": "Object Storage Migration Service",
+            "catalog": "Migration",
+            "name_cn": "对象存储迁移服务",
+            "catalog_cn": "迁移"
+          }
+        }
+      }
+    }
+  }
+}

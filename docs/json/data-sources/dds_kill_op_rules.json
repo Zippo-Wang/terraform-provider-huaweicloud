@@ -1,0 +1,69 @@
+{
+  "provider_schemas": {
+    "huaweicloud/huaweicloud": {
+      "data_source_schemas": {
+        "huaweicloud_dds_kill_op_rules": {
+          "block": {
+            "attributes": {
+              "id": {
+                "type": "string",
+                "computed": true
+              },
+              "instance_id": {
+                "type": "string",
+                "required": true
+              },
+              "namespaces": {
+                "type": "string",
+                "optional": true
+              },
+              "operation_types": {
+                "type": "string",
+                "optional": true
+              },
+              "plan_summary": {
+                "type": "string",
+                "optional": true
+              },
+              "region": {
+                "type": "string",
+                "computed": true
+              },
+              "rules": {
+                "type": [
+                  "list",
+                  [
+                    "object",
+                    {
+                      "client_ips": "string",
+                      "id": "string",
+                      "max_concurrency": "number",
+                      "namespaces": "string",
+                      "node_type": "string",
+                      "operation_types": "string",
+                      "plan_summary": "string",
+                      "secs_running": "number",
+                      "status": "string"
+                    }
+                  ]
+                ],
+                "computed": true
+              },
+              "status": {
+                "type": "string",
+                "optional": true
+              }
+            }
+          },
+          "product": {
+            "short": "DDS",
+            "name": "Document Database Service",
+            "catalog": "Databases",
+            "name_cn": "文档数据库服务",
+            "catalog_cn": "数据库"
+          }
+        }
+      }
+    }
+  }
+}

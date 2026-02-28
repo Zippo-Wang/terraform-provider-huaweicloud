@@ -1,0 +1,82 @@
+{
+  "provider_schemas": {
+    "huaweicloud/huaweicloud": {
+      "resource_schemas": {
+        "huaweicloud_ccm_csr": {
+          "block": {
+            "attributes": {
+              "company_city": {
+                "type": "string",
+                "optional": true,
+                "computed": true
+              },
+              "company_country": {
+                "type": "string",
+                "optional": true,
+                "computed": true
+              },
+              "company_name": {
+                "type": "string",
+                "optional": true,
+                "computed": true
+              },
+              "company_province": {
+                "type": "string",
+                "optional": true,
+                "computed": true
+              },
+              "create_time": {
+                "type": "number",
+                "computed": true
+              },
+              "csr": {
+                "type": "string",
+                "computed": true
+              },
+              "domain_name": {
+                "type": "string",
+                "required": true
+              },
+              "id": {
+                "type": "string",
+                "computed": true
+              },
+              "name": {
+                "type": "string",
+                "required": true
+              },
+              "private_key_algo": {
+                "type": "string",
+                "required": true
+              },
+              "region": {
+                "type": "string",
+                "computed": true
+              },
+              "sans": {
+                "type": "string",
+                "optional": true,
+                "computed": true
+              },
+              "update_time": {
+                "type": "number",
+                "computed": true
+              },
+              "usage": {
+                "type": "string",
+                "required": true
+              }
+            }
+          },
+          "product": {
+            "short": "CCM",
+            "name": "Cloud Certificate & Manager",
+            "catalog": "Security & Compliance",
+            "name_cn": "云证书与管理服务",
+            "catalog_cn": "安全与合规"
+          }
+        }
+      }
+    }
+  }
+}

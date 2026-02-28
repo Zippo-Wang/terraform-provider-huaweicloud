@@ -7,36 +7,44 @@
             "attributes": {
               "access_type": {
                 "type": "string",
+                "description": "The access type of the user.",
                 "optional": true,
                 "computed": true
               },
               "country_code": {
                 "type": "string",
+                "description": "The country code.",
                 "optional": true
               },
               "create_time": {
                 "type": "string",
+                "description": "The time when the IAM user was created.",
                 "computed": true
               },
               "description": {
                 "type": "string",
+                "description": "The description of the user.",
                 "optional": true
               },
               "email": {
                 "type": "string",
+                "description": "The email address.",
                 "optional": true
               },
               "enabled": {
                 "type": "bool",
+                "description": "Whether the user is enabled or disabled.",
                 "optional": true,
                 "default": true
               },
               "external_identity_id": {
                 "type": "string",
+                "description": "The ID of the IAM user in the external system.",
                 "optional": true
               },
               "external_identity_type": {
                 "type": "string",
+                "description": "The type of the IAM user in the external system.",
                 "optional": true,
                 "computed": true
               },
@@ -46,31 +54,38 @@
               },
               "last_login": {
                 "type": "string",
+                "description": "The time when the IAM user last login.",
                 "computed": true
               },
               "login_protect_verification_method": {
                 "type": "string",
+                "description": "The verification method of login protect.",
                 "optional": true
               },
               "name": {
                 "type": "string",
+                "description": "The name of the user.",
                 "required": true
               },
               "password": {
                 "type": "string",
+                "description": "The password for the user.",
                 "optional": true,
                 "sensitive": true
               },
               "password_strength": {
                 "type": "string",
+                "description": "The password strength.",
                 "computed": true
               },
               "phone": {
                 "type": "string",
+                "description": "The mobile number.",
                 "optional": true
               },
               "pwd_reset": {
                 "type": "bool",
+                "description": "Whether the password should be reset.",
                 "optional": true,
                 "default": true
               }

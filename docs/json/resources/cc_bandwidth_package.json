@@ -7,29 +7,23 @@
             "attributes": {
               "bandwidth": {
                 "type": "number",
-                "description": "Bandwidth in the bandwidth package.",
                 "required": true
               },
               "billing_mode": {
                 "type": "string",
-                "description": "Billing mode of the bandwidth package.",
                 "required": true
               },
               "charge_mode": {
                 "type": "string",
-                "description": "Billing option of the bandwidth package.",
-                "required": true,
-                "forcenew": true
+                "required": true
               },
               "description": {
                 "type": "string",
-                "description": "The description about the bandwidth package.",
                 "optional": true,
                 "computed": true
               },
               "enterprise_project_id": {
                 "type": "string",
-                "description": "ID of the enterprise project that the bandwidth package belongs to.",
                 "optional": true,
                 "computed": true
               },
@@ -39,28 +33,21 @@
               },
               "interflow_mode": {
                 "type": "string",
-                "description": "Interflow mode of the bandwidth package.",
                 "optional": true,
-                "computed": true,
-                "forcenew": true
+                "computed": true
               },
               "local_area_id": {
                 "type": "string",
-                "description": "The local area ID.",
-                "required": true,
-                "forcenew": true
+                "required": true
               },
               "name": {
                 "type": "string",
-                "description": "The bandwidth package name.",
                 "required": true
               },
               "project_id": {
                 "type": "string",
-                "description": "Project ID.",
                 "optional": true,
-                "computed": true,
-                "forcenew": true
+                "computed": true
               },
               "region": {
                 "type": "string",
@@ -68,32 +55,25 @@
               },
               "remote_area_id": {
                 "type": "string",
-                "description": "The remote area ID.",
-                "required": true,
-                "forcenew": true
+                "required": true
               },
               "resource_id": {
                 "type": "string",
-                "description": "ID of the resource that the bandwidth package is bound to.",
                 "optional": true,
                 "computed": true
               },
               "resource_type": {
                 "type": "string",
-                "description": "Type of the resource that the bandwidth package is bound to.",
                 "optional": true,
                 "computed": true
               },
               "spec_code": {
                 "type": "string",
-                "description": "Specification code of the bandwidth package.",
                 "optional": true,
-                "computed": true,
-                "forcenew": true
+                "computed": true
               },
               "status": {
                 "type": "string",
-                "description": "Bandwidth package status.",
                 "computed": true
               },
               "tags": {

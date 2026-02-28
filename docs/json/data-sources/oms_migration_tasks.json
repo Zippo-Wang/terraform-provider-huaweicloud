@@ -1,0 +1,172 @@
+{
+  "provider_schemas": {
+    "huaweicloud/huaweicloud": {
+      "data_source_schemas": {
+        "huaweicloud_oms_migration_tasks": {
+          "block": {
+            "attributes": {
+              "group_id": {
+                "type": "string",
+                "optional": true
+              },
+              "id": {
+                "type": "string",
+                "computed": true
+              },
+              "region": {
+                "type": "string",
+                "computed": true
+              },
+              "status": {
+                "type": "number",
+                "optional": true
+              },
+              "tasks": {
+                "type": [
+                  "list",
+                  [
+                    "object",
+                    {
+                      "bandwidth_policy": [
+                        "list",
+                        [
+                          "object",
+                          {
+                            "end": "string",
+                            "max_bandwidth": "number",
+                            "start": "string"
+                          }
+                        ]
+                      ],
+                      "complete_size": "number",
+                      "consistency_check": "string",
+                      "description": "string",
+                      "dst_node": [
+                        "list",
+                        [
+                          "object",
+                          {
+                            "bucket": "string",
+                            "region": "string",
+                            "save_prefix": "string"
+                          }
+                        ]
+                      ],
+                      "dst_storage_policy": "string",
+                      "enable_failed_object_recording": "bool",
+                      "enable_kms": "bool",
+                      "enable_metadata_migration": "bool",
+                      "enable_requester_pays": "bool",
+                      "enable_restore": "bool",
+                      "error_reason": [
+                        "list",
+                        [
+                          "object",
+                          {
+                            "error_code": "string",
+                            "error_msg": "string"
+                          }
+                        ]
+                      ],
+                      "fail_num": "number",
+                      "failed_object_record": [
+                        "list",
+                        [
+                          "object",
+                          {
+                            "error_code": "string",
+                            "list_file_key": "string",
+                            "result": "bool"
+                          }
+                        ]
+                      ],
+                      "group_id": "string",
+                      "group_type": "string",
+                      "id": "number",
+                      "is_query_over": "bool",
+                      "left_time": "number",
+                      "migrate_since": "number",
+                      "migrate_speed": "number",
+                      "name": "string",
+                      "object_overwrite_mode": "string",
+                      "progress": "number",
+                      "real_size": "number",
+                      "skip_record_error_reason": "string",
+                      "skipped_num": "number",
+                      "smn_info": [
+                        "list",
+                        [
+                          "object",
+                          {
+                            "notify_error_message": "string",
+                            "notify_result": "bool",
+                            "topic_name": "string"
+                          }
+                        ]
+                      ],
+                      "source_cdn": [
+                        "list",
+                        [
+                          "object",
+                          {
+                            "authentication_type": "string",
+                            "domain": "string",
+                            "protocol": "string"
+                          }
+                        ]
+                      ],
+                      "src_node": [
+                        "list",
+                        [
+                          "object",
+                          {
+                            "app_id": "string",
+                            "bucket": "string",
+                            "cloud_type": "string",
+                            "list_file": [
+                              "list",
+                              [
+                                "object",
+                                {
+                                  "list_file_key": "string",
+                                  "list_file_num": "string",
+                                  "obs_bucket": "string"
+                                }
+                              ]
+                            ],
+                            "object_key": [
+                              "list",
+                              "string"
+                            ],
+                            "region": "string"
+                          }
+                        ]
+                      ],
+                      "start_time": "number",
+                      "status": "number",
+                      "success_record_error_reason": "string",
+                      "successful_num": "number",
+                      "task_priority": "string",
+                      "task_type": "string",
+                      "total_num": "number",
+                      "total_size": "number",
+                      "total_time": "number"
+                    }
+                  ]
+                ],
+                "computed": true
+              }
+            }
+          },
+          "product": {
+            "short": "OMS",
+            "name": "Object Storage Migration Service",
+            "catalog": "Migration",
+            "name_cn": "对象存储迁移服务",
+            "catalog_cn": "迁移"
+          }
+        }
+      }
+    }
+  }
+}

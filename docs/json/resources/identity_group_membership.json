@@ -7,8 +7,8 @@
             "attributes": {
               "group": {
                 "type": "string",
-                "required": true,
-                "forcenew": true
+                "description": "The ID of the group to which the users belong.",
+                "required": true
               },
               "id": {
                 "type": "string",
@@ -16,9 +16,10 @@
               },
               "users": {
                 "type": [
-                  "set",
+                  "list",
                   "string"
                 ],
+                "description": "The list of user IDs associated with the group.",
                 "required": true
               }
             }

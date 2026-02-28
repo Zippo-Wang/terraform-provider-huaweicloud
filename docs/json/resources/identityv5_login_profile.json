@@ -7,6 +7,7 @@
             "attributes": {
               "created_at": {
                 "type": "string",
+                "description": "The creation time of the login profile.",
                 "computed": true
               },
               "id": {
@@ -15,21 +16,25 @@
               },
               "password": {
                 "type": "string",
+                "description": "The password of the user login.",
                 "optional": true,
                 "computed": true,
                 "sensitive": true
               },
               "password_expires_at": {
                 "type": "string",
+                "description": "The password expiration time of the user.",
                 "computed": true
               },
               "password_reset_required": {
                 "type": "bool",
+                "description": "Whether the user needs to reset the password at the next login.",
                 "optional": true,
                 "computed": true
               },
               "user_id": {
                 "type": "string",
+                "description": "The ID of the user.",
                 "required": true
               }
             }

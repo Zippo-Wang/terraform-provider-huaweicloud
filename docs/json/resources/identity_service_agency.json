@@ -7,19 +7,23 @@
             "attributes": {
               "created_at": {
                 "type": "string",
+                "description": "The time when the service agency was created.",
                 "computed": true
               },
               "delegated_service_name": {
                 "type": "string",
+                "description": "The name of delegated service name.",
                 "required": true,
                 "forcenew": true
               },
               "description": {
                 "type": "string",
+                "description": "The description of the service agency.",
                 "optional": true
               },
               "duration": {
                 "type": "number",
+                "description": "The validity period of a service agency.",
                 "optional": true,
                 "computed": true
               },
@@ -29,11 +33,13 @@
               },
               "name": {
                 "type": "string",
+                "description": "The name of service agency.",
                 "required": true,
                 "forcenew": true
               },
               "path": {
                 "type": "string",
+                "description": "The resource path.",
                 "optional": true,
                 "forcenew": true
               },
@@ -42,6 +48,7 @@
                   "set",
                   "string"
                 ],
+                "description": "The string list of one or more policy names that you would like to attach to the service agency.",
                 "required": true
               },
               "tags": {
@@ -54,10 +61,12 @@
               },
               "trust_policy": {
                 "type": "string",
+                "description": "The trust policy of the service agency.",
                 "computed": true
               },
               "urn": {
                 "type": "string",
+                "description": "The uniform resource name of the service agency.",
                 "computed": true
               }
             }

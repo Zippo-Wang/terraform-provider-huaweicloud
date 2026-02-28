@@ -7,6 +7,7 @@
             "attributes": {
               "custom_info_for_login": {
                 "type": "string",
+                "description": "The custom information that will be displayed upon successful login.",
                 "optional": true
               },
               "id": {
@@ -15,26 +16,32 @@
               },
               "lockout_duration": {
                 "type": "number",
+                "description": "The lockout duration after multiple failed login attempts, in minutes.",
                 "optional": true
               },
               "login_failed_times": {
                 "type": "number",
+                "description": "The number of consecutive failed login attempts before the account is locked.",
                 "optional": true
               },
               "period_with_login_failures": {
                 "type": "number",
+                "description": "The period to reset the account lockout counter, in minutes.",
                 "optional": true
               },
               "session_timeout": {
                 "type": "number",
+                "description": "The session timeout duration after user login, in minutes.",
                 "optional": true
               },
               "show_recent_login_info": {
                 "type": "bool",
+                "description": "Whether to display the last login information.",
                 "optional": true
               },
               "user_validity_period": {
                 "type": "number",
+                "description": "The validity period to disable users, in days.",
                 "optional": true,
                 "computed": true
               }
@@ -45,13 +52,16 @@
                   "attributes": {
                     "address_netmask": {
                       "type": "string",
+                      "description": "The IP address or network segment.",
                       "required": true
                     },
                     "description": {
                       "type": "string",
+                      "description": "The description information",
                       "optional": true
                     }
-                  }
+                  },
+                  "description": "IP address list or network segment list that are allowed to access."
                 },
                 "nesting_mode": "list"
               },
@@ -60,13 +70,16 @@
                   "attributes": {
                     "description": {
                       "type": "string",
+                      "description": "The description information.",
                       "optional": true
                     },
                     "ip_range": {
                       "type": "string",
+                      "description": "The IP address range.",
                       "required": true
                     }
-                  }
+                  },
+                  "description": "The IP address range list that are allowed to access."
                 },
                 "nesting_mode": "list"
               },
@@ -75,13 +88,16 @@
                   "attributes": {
                     "description": {
                       "type": "string",
+                      "description": "The description information.",
                       "optional": true
                     },
                     "ip_range": {
                       "type": "string",
+                      "description": "The IPv6 address range.",
                       "required": true
                     }
-                  }
+                  },
+                  "description": "The IPv6 address range list that are allowed to access."
                 },
                 "nesting_mode": "list"
               }

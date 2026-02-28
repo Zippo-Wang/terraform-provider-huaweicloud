@@ -172,21 +172,19 @@
                   "attributes": {
                     "excludes": {
                       "type": [
-                        "set",
+                        "list",
                         "string"
                       ],
                       "description": "The array of disk IDs which will be excluded in the backup.",
-                      "optional": true,
-                      "computed": true
+                      "optional": true
                     },
                     "includes": {
                       "type": [
-                        "set",
+                        "list",
                         "string"
                       ],
                       "description": "The array of disk or SFS file systems which will be included in the backup.",
-                      "optional": true,
-                      "computed": true
+                      "optional": true
                     },
                     "server_id": {
                       "type": "string",
@@ -196,7 +194,38 @@
                   },
                   "description": "The array of one or more resources to attach to the CBR vault."
                 },
-                "nesting_mode": "set"
+                "nesting_mode": "list"
+              },
+              "resources_origin": {
+                "block": {
+                  "attributes": {
+                    "excludes": {
+                      "type": [
+                        "list",
+                        "string"
+                      ],
+                      "description": "The array of disk IDs which will be excluded in the backup.",
+                      "optional": true,
+                      "computed": true
+                    },
+                    "includes": {
+                      "type": [
+                        "list",
+                        "string"
+                      ],
+                      "description": "The array of disk or SFS file systems which will be included in the backup.",
+                      "optional": true,
+                      "computed": true
+                    },
+                    "server_id": {
+                      "type": "string",
+                      "description": "The ID of the ECS instance to be backed up.",
+                      "computed": true
+                    }
+                  },
+                  "description": "schema:{\"Internal\":true};The script configuration value of this change is also the original value used for comparison with\n the new value next time the change is made. The corresponding parameter name is 'resources'."
+                },
+                "nesting_mode": "list"
               }
             }
           },

@@ -10,18 +10,22 @@
                   "set",
                   "string"
                 ],
+                "description": "The roles assignment for the agency which the all resources are used to grant.",
                 "optional": true
               },
               "create_time": {
                 "type": "string",
+                "description": "The creation time of the agency.",
                 "computed": true
               },
               "delegated_domain_name": {
                 "type": "string",
+                "description": "The name of the delegated user domain.",
                 "required": true
               },
               "description": {
                 "type": "string",
+                "description": "The description (supplementary information) of the agency.",
                 "optional": true
               },
               "domain_roles": {
@@ -29,15 +33,18 @@
                   "set",
                   "string"
                 ],
+                "description": "The roles assignment for the agency which the domain are used to grant.",
                 "optional": true
               },
               "duration": {
                 "type": "string",
+                "description": "The validity period of the agency.",
                 "optional": true,
                 "default": "FOREVER"
               },
               "expire_time": {
                 "type": "string",
+                "description": "The expiration time of the agency.",
                 "computed": true
               },
               "id": {
@@ -46,8 +53,8 @@
               },
               "name": {
                 "type": "string",
-                "required": true,
-                "forcenew": true
+                "description": "The name of the agency.",
+                "required": true
               }
             },
             "block_types": {
@@ -56,6 +63,7 @@
                   "attributes": {
                     "enterprise_project": {
                       "type": "string",
+                      "description": "The name of the enterprise project.",
                       "required": true
                     },
                     "roles": {
@@ -63,9 +71,11 @@
                         "set",
                         "string"
                       ],
+                      "description": "The list of role names used for assignment in a specified enterprise project.",
                       "required": true
                     }
-                  }
+                  },
+                  "description": "The roles assignment for the agency which the enterprise projects are used to grant."
                 },
                 "nesting_mode": "set"
               },
@@ -74,6 +84,7 @@
                   "attributes": {
                     "project": {
                       "type": "string",
+                      "description": "The name of the project.",
                       "required": true
                     },
                     "roles": {
@@ -81,9 +92,11 @@
                         "set",
                         "string"
                       ],
+                      "description": "The list of role names used for assignment in a specified project.",
                       "required": true
                     }
-                  }
+                  },
+                  "description": "The roles assignment for the agency which the projects are used to grant."
                 },
                 "nesting_mode": "set"
               }

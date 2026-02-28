@@ -7,6 +7,7 @@
             "attributes": {
               "description": {
                 "type": "string",
+                "description": "The description of the custom policy.",
                 "required": true
               },
               "id": {
@@ -15,18 +16,22 @@
               },
               "name": {
                 "type": "string",
+                "description": "The name of the custom policy.",
                 "required": true
               },
               "policy": {
                 "type": "string",
+                "description": "The content of the custom policy, in JSON format.",
                 "required": true
               },
               "references": {
                 "type": "number",
+                "description": "The number of references.",
                 "computed": true
               },
               "type": {
                 "type": "string",
+                "description": "The display mode of the custom policy.",
                 "required": true
               }
             }

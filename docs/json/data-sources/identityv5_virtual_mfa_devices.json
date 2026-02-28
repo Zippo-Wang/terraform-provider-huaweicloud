@@ -17,6 +17,7 @@
                     }
                   ]
                 ],
+                "description": "The list of virtual MFA devices that matched filter parameters.",
                 "computed": true
               },
               "id": {

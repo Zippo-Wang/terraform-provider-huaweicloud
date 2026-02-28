@@ -1,0 +1,28 @@
+{
+  "provider_schemas": {
+    "huaweicloud/huaweicloud": {
+      "resource_schemas": {
+        "huaweicloud_lakeformation_instance_recover": {
+          "block": {
+            "attributes": {
+              "id": {
+                "type": "string",
+                "computed": true
+              },
+              "instance_id": {
+                "type": "string",
+                "description": "The ID of the instance to be recovered from the recycle bin.",
+                "required": true
+              },
+              "region": {
+                "type": "string",
+                "description": "The region where the instance needs to be recovered is located.",
+                "computed": true
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -7,7 +7,7 @@
             "attributes": {
               "db_name": {
                 "type": "string",
-                "description": "Specifies the database name.",
+                "description": "The database name to which the users (accounts) are privileged.",
                 "required": true
               },
               "id": {
@@ -16,11 +16,12 @@
               },
               "instance_id": {
                 "type": "string",
-                "description": "Specifies the ID of the RDS Mysql instance.",
+                "description": "The ID of the MySQL instance.",
                 "required": true
               },
               "region": {
                 "type": "string",
+                "description": "The region where the database and users (accounts) are located.",
                 "computed": true
               }
             },
@@ -30,20 +31,38 @@
                   "attributes": {
                     "name": {
                       "type": "string",
-                      "description": "Specifies the username of the database account.",
+                      "description": "The username of the database account.",
                       "required": true
                     },
                     "readonly": {
                       "type": "bool",
-                      "description": "Specifies the read-only permission.",
+                      "description": "Whether the user has read-only permission.",
                       "optional": true,
                       "computed": true
                     }
                   },
-                  "description": "Specifies the account that associated with the database."
+                  "description": "The user (account) permissions with the database."
                 },
-                "nesting_mode": "set",
+                "nesting_mode": "list",
                 "min_items": 1
+              },
+              "users_origin": {
+                "block": {
+                  "attributes": {
+                    "name": {
+                      "type": "string",
+                      "description": "Specifies the username of the database account.",
+                      "computed": true
+                    },
+                    "readonly": {
+                      "type": "bool",
+                      "description": "Specifies the read-only permission.",
+                      "computed": true
+                    }
+                  },
+                  "description": "schema:{\"Internal\":true};The script configuration value of this change is also the original value used for comparison with\nthe new value next time the change is made. The corresponding parameter name is 'users'."
+                },
+                "nesting_mode": "list"
               }
             }
           },

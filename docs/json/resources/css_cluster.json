@@ -278,6 +278,24 @@
                 "nesting_mode": "list",
                 "max_items": 1
               },
+              "disk_encryption": {
+                "block": {
+                  "attributes": {
+                    "system_cmk_id": {
+                      "type": "string",
+                      "optional": true,
+                      "computed": true
+                    },
+                    "system_encrypted": {
+                      "type": "string",
+                      "optional": true,
+                      "computed": true
+                    }
+                  }
+                },
+                "nesting_mode": "list",
+                "max_items": 1
+              },
               "ess_node_config": {
                 "block": {
                   "attributes": {

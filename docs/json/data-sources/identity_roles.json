@@ -1,0 +1,90 @@
+{
+  "provider_schemas": {
+    "huaweicloud/huaweicloud": {
+      "data_source_schemas": {
+        "huaweicloud_identity_roles": {
+          "block": {
+            "attributes": {
+              "catalog": {
+                "type": "string",
+                "description": "The catalog of the role to be queried.",
+                "optional": true
+              },
+              "display_name": {
+                "type": "string",
+                "description": "The display name of the role to be queried.",
+                "optional": true
+              },
+              "domain_id": {
+                "type": "string",
+                "description": "The domain ID to be queried.",
+                "optional": true
+              },
+              "id": {
+                "type": "string",
+                "computed": true
+              },
+              "name": {
+                "type": "string",
+                "description": "The name of the role to be queried.",
+                "optional": true
+              },
+              "permission_type": {
+                "type": "string",
+                "description": "The permission type of the role to be queried.",
+                "optional": true
+              },
+              "roles": {
+                "type": [
+                  "list",
+                  [
+                    "object",
+                    {
+                      "catalog": "string",
+                      "created_at": "string",
+                      "description": "string",
+                      "description_cn": "string",
+                      "display_name": "string",
+                      "domain_id": "string",
+                      "flag": "string",
+                      "id": "string",
+                      "links": [
+                        "list",
+                        [
+                          "object",
+                          {
+                            "next": "string",
+                            "previous": "string",
+                            "self": "string"
+                          }
+                        ]
+                      ],
+                      "name": "string",
+                      "policy": "string",
+                      "type": "string",
+                      "updated_at": "string"
+                    }
+                  ]
+                ],
+                "description": "The list of the roles.",
+                "computed": true
+              },
+              "type": {
+                "type": "string",
+                "description": "The display mode of the role to be queried.",
+                "optional": true
+              }
+            }
+          },
+          "product": {
+            "short": "IAM",
+            "name": "Identity and Access Management",
+            "catalog": "Management & Governance",
+            "name_cn": "统一身份认证服务",
+            "catalog_cn": "管理与监管"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "provider_schemas": {
+    "huaweicloud/huaweicloud": {
+      "data_source_schemas": {
+        "huaweicloud_oms_cloud_type_venders": {
+          "block": {
+            "attributes": {
+              "id": {
+                "type": "string",
+                "computed": true
+              },
+              "region": {
+                "type": "string",
+                "computed": true
+              },
+              "type": {
+                "type": "string",
+                "required": true
+              },
+              "venders": {
+                "type": [
+                  "list",
+                  "string"
+                ],
+                "computed": true
+              }
+            }
+          },
+          "product": {
+            "short": "OMS",
+            "name": "Object Storage Migration Service",
+            "catalog": "Migration",
+            "name_cn": "对象存储迁移服务",
+            "catalog_cn": "迁移"
+          }
+        }
+      }
+    }
+  }
+}

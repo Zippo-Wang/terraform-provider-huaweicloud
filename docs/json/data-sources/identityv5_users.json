@@ -7,7 +7,7 @@
             "attributes": {
               "group_id": {
                 "type": "string",
-                "description": "The ID of the IAM user.",
+                "description": "The ID of the user group to which the users belong.",
                 "optional": true
               },
               "id": {
@@ -16,6 +16,7 @@
               },
               "user_id": {
                 "type": "string",
+                "description": "The ID of the user.",
                 "optional": true
               },
               "users": {
@@ -47,6 +48,7 @@
                     }
                   ]
                 ],
+                "description": "The list of users that matched filter parameters.",
                 "computed": true
               }
             }

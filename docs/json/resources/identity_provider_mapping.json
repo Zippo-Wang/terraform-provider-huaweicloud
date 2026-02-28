@@ -11,10 +11,12 @@
               },
               "mapping_rules": {
                 "type": "string",
+                "description": "The mapping rules of the identity provider.",
                 "required": true
               },
               "provider_id": {
                 "type": "string",
+                "description": "The ID of the identity provider used to manage the mapping.",
                 "required": true
               }
             }

@@ -7,11 +7,12 @@
             "attributes": {
               "account_name": {
                 "type": "string",
-                "required": true,
-                "forcenew": true
+                "description": "The account name to which the IAM user belongs.",
+                "required": true
               },
               "expires_at": {
                 "type": "string",
+                "description": "The Time when the token will expire.",
                 "computed": true
               },
               "id": {
@@ -20,23 +21,24 @@
               },
               "password": {
                 "type": "string",
+                "description": "The IAM user password.",
                 "required": true,
-                "forcenew": true,
                 "sensitive": true
               },
               "project_name": {
                 "type": "string",
-                "optional": true,
-                "forcenew": true
+                "description": "The project name.",
+                "optional": true
               },
               "token": {
                 "type": "string",
+                "description": "The token of the IAM user.",
                 "computed": true
               },
               "user_name": {
                 "type": "string",
-                "required": true,
-                "forcenew": true
+                "description": "The IAM user name.",
+                "required": true
               }
             }
           },

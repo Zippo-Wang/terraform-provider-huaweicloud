@@ -7,6 +7,7 @@
             "attributes": {
               "expires_at": {
                 "type": "string",
+                "description": "The time when the token will expire.",
                 "computed": true
               },
               "groups": {
@@ -14,6 +15,7 @@
                   "list",
                   "string"
                 ],
+                "description": "The group list of the user.",
                 "computed": true
               },
               "id": {
@@ -22,29 +24,28 @@
               },
               "idp_id": {
                 "type": "string",
-                "description": "Identity Provider Id",
-                "required": true,
-                "forcenew": true
+                "description": "The identity provider id.",
+                "required": true
               },
               "saml_response": {
                 "type": "string",
-                "description": "The response body returned after successful IdP authentication.",
-                "required": true,
-                "forcenew": true
+                "description": "The response body returned after successful IDP authentication.",
+                "required": true
               },
               "token": {
                 "type": "string",
+                "description": "The unscoped token.",
                 "computed": true
               },
               "username": {
                 "type": "string",
+                "description": "The user of token.",
                 "computed": true
               },
               "with_global_domain": {
                 "type": "bool",
-                "description": "Whether to use a global domain name to obtain the token. Its default value is false",
+                "description": "Whether to use a global domain name to obtain the token.",
                 "optional": true,
-                "forcenew": true,
                 "default": false
               }
             }

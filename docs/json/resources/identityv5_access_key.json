@@ -7,10 +7,12 @@
             "attributes": {
               "access_key_id": {
                 "type": "string",
+                "description": "The ID of the generated access key.",
                 "computed": true
               },
               "created_at": {
                 "type": "string",
+                "description": "The creation time of the access key.",
                 "computed": true
               },
               "id": {
@@ -19,20 +21,24 @@
               },
               "last_used_at": {
                 "type": "string",
+                "description": "The time when the access key was last used.",
                 "computed": true
               },
               "secret_access_key": {
                 "type": "string",
+                "description": "The generated secret access key.",
                 "computed": true,
                 "sensitive": true
               },
               "status": {
                 "type": "string",
+                "description": "The status of the access key.",
                 "optional": true,
                 "computed": true
               },
               "user_id": {
                 "type": "string",
+                "description": "The ID of the user.",
                 "required": true
               }
             }

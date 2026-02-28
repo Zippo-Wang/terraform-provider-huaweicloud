@@ -1,0 +1,64 @@
+{
+  "provider_schemas": {
+    "huaweicloud/huaweicloud": {
+      "data_source_schemas": {
+        "huaweicloud_lakeformation_instances": {
+          "block": {
+            "attributes": {
+              "enterprise_project_id": {
+                "type": "string",
+                "description": "The ID of the enterprise project to which the instances belong.",
+                "optional": true
+              },
+              "id": {
+                "type": "string",
+                "computed": true
+              },
+              "in_recycle_bin": {
+                "type": "bool",
+                "description": "Whether to query instances in the recycle bin.",
+                "optional": true
+              },
+              "instances": {
+                "type": [
+                  "list",
+                  [
+                    "object",
+                    {
+                      "create_time": "string",
+                      "default_instance": "bool",
+                      "description": "string",
+                      "enterprise_project_id": "string",
+                      "in_recycle_bin": "bool",
+                      "instance_id": "string",
+                      "name": "string",
+                      "shared": "bool",
+                      "status": "string",
+                      "tags": [
+                        "map",
+                        "string"
+                      ],
+                      "update_time": "string"
+                    }
+                  ]
+                ],
+                "description": "The list of instances that matched filter parameters.",
+                "computed": true
+              },
+              "name": {
+                "type": "string",
+                "description": "The name of the instance to be queried.",
+                "optional": true
+              },
+              "region": {
+                "type": "string",
+                "description": "The region where the instances are located.",
+                "computed": true
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

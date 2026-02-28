@@ -11,10 +11,12 @@
               },
               "resource_id": {
                 "type": "string",
+                "description": "The resource ID to be associated with the tags.",
                 "required": true
               },
               "resource_type": {
                 "type": "string",
+                "description": "The resource type to be associated with the tags.",
                 "required": true
               },
               "tags": {
@@ -22,6 +24,7 @@
                   "map",
                   "string"
                 ],
+                "description": "The key/value pairs to associated with the resource.",
                 "optional": true,
                 "computed": true
               }

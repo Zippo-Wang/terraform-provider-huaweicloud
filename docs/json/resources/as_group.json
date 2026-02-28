@@ -45,7 +45,7 @@
               "delete_publicip": {
                 "type": "bool",
                 "optional": true,
-                "default": false
+                "computed": true
               },
               "delete_volume": {
                 "type": "bool",

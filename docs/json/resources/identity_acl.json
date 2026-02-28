@@ -11,40 +11,72 @@
               },
               "type": {
                 "type": "string",
-                "required": true,
-                "forcenew": true
+                "description": "The type of the ACL policy.",
+                "required": true
               }
             },
             "block_types": {
+              "ip_ciders_order": {
+                "block": {
+                  "attributes": {
+                    "cidr": {
+                      "type": "string",
+                      "description": "The origin IPv4 CIDR block.",
+                      "computed": true
+                    }
+                  },
+                  "description": "schema:{\"Internal\":true};The origin list of IPv4 CIDR blocks that used to reorder the 'ip_cidrs' parameter."
+                },
+                "nesting_mode": "list"
+              },
               "ip_cidrs": {
                 "block": {
                   "attributes": {
                     "cidr": {
                       "type": "string",
+                      "description": "The IPv4 CIDR block which allow access through console or API.",
                       "required": true
                     },
                     "description": {
                       "type": "string",
+                      "description": "The description of the IPv4 CIDR block.",
                       "optional": true
                     }
-                  }
+                  },
+                  "description": "The list of IPv4 CIDR blocks from which console access or API access is allowed."
                 },
-                "nesting_mode": "set"
+                "nesting_mode": "list"
               },
               "ip_ranges": {
                 "block": {
                   "attributes": {
                     "description": {
                       "type": "string",
+                      "description": "The description of the IP address range.",
                       "optional": true
                     },
                     "range": {
                       "type": "string",
+                      "description": "The IPv4 address range which allow access through console or API.",
                       "required": true
                     }
-                  }
+                  },
+                  "description": "The list of IPv4 address ranges from which console access or API access is allowed."
                 },
-                "nesting_mode": "set"
+                "nesting_mode": "list"
+              },
+              "ip_ranges_order": {
+                "block": {
+                  "attributes": {
+                    "range": {
+                      "type": "string",
+                      "description": "The origin IPv4 range.",
+                      "computed": true
+                    }
+                  },
+                  "description": "schema:{\"Internal\":true};The origin list of IPv4 ranges that used to reorder the 'ip_ranges' parameter."
+                },
+                "nesting_mode": "list"
               }
             }
           },

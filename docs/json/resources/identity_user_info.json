@@ -7,7 +7,7 @@
             "attributes": {
               "email": {
                 "type": "string",
-                "description": "The email must conform to the email format and be no longer than 255 characters.",
+                "description": "The email of the user.",
                 "optional": true
               },
               "id": {
@@ -16,7 +16,7 @@
               },
               "mobile": {
                 "type": "string",
-                "description": "The mobile format is `<country code>-<phone number>`, such as 0086-123456789.",
+                "description": "The mobile phone number of the user.",
                 "optional": true
               }
             }

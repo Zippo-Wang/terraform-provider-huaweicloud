@@ -7,30 +7,37 @@
             "attributes": {
               "agencies": {
                 "type": "number",
+                "description": "The total number of agencies and trusted agencies created in this account.",
                 "computed": true
               },
               "agencies_quota": {
                 "type": "number",
+                "description": "The total quota of agencies and trusted agencies that can be created in this account.",
                 "computed": true
               },
               "attached_policies_per_agency_quota": {
                 "type": "number",
+                "description": "The maximum number of identity policies that can be attached to an agency or trusted agency.",
                 "computed": true
               },
               "attached_policies_per_group_quota": {
                 "type": "number",
+                "description": "The maximum number of identity policies that can be attached to a user group.",
                 "computed": true
               },
               "attached_policies_per_user_quota": {
                 "type": "number",
+                "description": "The maximum number of identity policies that can be attached to an IAM user.",
                 "computed": true
               },
               "groups": {
                 "type": "number",
+                "description": "The current number of user groups created in this account.",
                 "computed": true
               },
               "groups_quota": {
                 "type": "number",
+                "description": "The quota of user groups that can be created in this account.",
                 "computed": true
               },
               "id": {
@@ -39,30 +46,37 @@
               },
               "policies": {
                 "type": "number",
+                "description": "The current number of custom identity policies created in this account.",
                 "computed": true
               },
               "policies_quota": {
                 "type": "number",
+                "description": "The maximum number of custom identity policies.",
                 "computed": true
               },
               "policy_size_quota": {
                 "type": "number",
+                "description": "The maximum number of characters in the policy document of identity policies and trusted policies, excluding spaces.",
                 "computed": true
               },
               "root_user_mfa_enabled": {
                 "type": "number",
+                "description": "The number of MFA devices enabled for the root user.",
                 "computed": true
               },
               "users": {
                 "type": "number",
+                "description": "The current number of IAM users created in this account, including the root user.",
                 "computed": true
               },
               "users_quota": {
                 "type": "number",
+                "description": "The quota of IAM users that can be created in this account, including the root user.",
                 "computed": true
               },
               "versions_per_policy_quota": {
                 "type": "number",
+                "description": "The maximum number of versions that can be retained for a custom identity policy at the same time.",
                 "computed": true
               }
             }

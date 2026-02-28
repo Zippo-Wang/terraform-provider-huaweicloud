@@ -38,10 +38,12 @@
                     }
                   ]
                 ],
+                "description": "The identity conversion rules of the identity provider.",
                 "computed": true
               },
               "description": {
                 "type": "string",
+                "description": "The description of the identity provider.",
                 "optional": true
               },
               "id": {
@@ -50,31 +52,37 @@
               },
               "login_link": {
                 "type": "string",
+                "description": "The login link of the identity provider.",
                 "computed": true
               },
               "metadata": {
                 "type": "string",
+                "description": "The metadata of the IDP server.",
                 "optional": true
               },
               "name": {
                 "type": "string",
+                "description": "The name of the identity provider to be registered.",
                 "required": true,
                 "forcenew": true
               },
               "protocol": {
                 "type": "string",
+                "description": "The protocol of the identity provider.",
                 "optional": true,
                 "computed": true,
                 "forcenew": true
               },
               "sso_type": {
                 "type": "string",
+                "description": "The single sign-on type of the identity provider.",
                 "optional": true,
                 "computed": true,
                 "forcenew": true
               },
               "status": {
                 "type": "bool",
+                "description": "Whether the identity provider is enabled.",
                 "optional": true,
                 "default": true
               }
@@ -85,28 +93,34 @@
                   "attributes": {
                     "access_type": {
                       "type": "string",
+                      "description": "The access type of the identity provider.",
                       "required": true
                     },
                     "authorization_endpoint": {
                       "type": "string",
+                      "description": "The authorization endpoint of the OpenID Connect identity provider.",
                       "optional": true,
                       "computed": true
                     },
                     "client_id": {
                       "type": "string",
+                      "description": "The ID of a client registered with the OpenID Connect identity provider.",
                       "required": true
                     },
                     "provider_url": {
                       "type": "string",
+                      "description": "The URL of the identity provider.",
                       "required": true
                     },
                     "response_mode": {
                       "type": "string",
+                      "description": "The response mode.",
                       "optional": true,
                       "default": "form_post"
                     },
                     "response_type": {
                       "type": "string",
+                      "description": "The response type.",
                       "optional": true,
                       "default": "id_token"
                     },
@@ -115,14 +129,17 @@
                         "list",
                         "string"
                       ],
+                      "description": "The scopes of authorization requests.",
                       "optional": true,
                       "computed": true
                     },
                     "signing_key": {
                       "type": "string",
+                      "description": "The public key used to sign the ID token of the OpenID Connect\n                                   identity provider.",
                       "required": true
                     }
-                  }
+                  },
+                  "description": "The access configuration of the identity provider."
                 },
                 "nesting_mode": "list",
                 "max_items": 1

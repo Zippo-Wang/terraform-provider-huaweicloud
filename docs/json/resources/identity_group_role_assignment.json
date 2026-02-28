@@ -7,18 +7,18 @@
             "attributes": {
               "domain_id": {
                 "type": "string",
-                "optional": true,
-                "forcenew": true
+                "description": "The ID of domain to assign the role in.",
+                "optional": true
               },
               "enterprise_project_id": {
                 "type": "string",
-                "optional": true,
-                "forcenew": true
+                "description": "The ID of enterprise project to assign the role in.",
+                "optional": true
               },
               "group_id": {
                 "type": "string",
-                "required": true,
-                "forcenew": true
+                "description": "The ID of user group to which the role to be authorized belongs.",
+                "required": true
               },
               "id": {
                 "type": "string",
@@ -26,13 +26,13 @@
               },
               "project_id": {
                 "type": "string",
-                "optional": true,
-                "forcenew": true
+                "description": "The ID of project to assign the role in.",
+                "optional": true
               },
               "role_id": {
                 "type": "string",
-                "required": true,
-                "forcenew": true
+                "description": "The ID of role to be authorized.",
+                "required": true
               }
             }
           },

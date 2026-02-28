@@ -1,0 +1,28 @@
+{
+  "provider_schemas": {
+    "huaweicloud/huaweicloud": {
+      "resource_schemas": {
+        "huaweicloud_lakeformation_instance_default_update": {
+          "block": {
+            "attributes": {
+              "id": {
+                "type": "string",
+                "computed": true
+              },
+              "instance_id": {
+                "type": "string",
+                "description": "The ID of the instance needs to be set as default.",
+                "required": true
+              },
+              "region": {
+                "type": "string",
+                "description": "The region where the instance needs to be set as default is located.",
+                "computed": true
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

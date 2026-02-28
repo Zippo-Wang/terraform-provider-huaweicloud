@@ -18,10 +18,12 @@
                     }
                   ]
                 ],
+                "description": "The list of policies attached to the user group.",
                 "computed": true
               },
               "group_id": {
                 "type": "string",
+                "description": "The ID of the IAM user group.",
                 "required": true
               },
               "id": {

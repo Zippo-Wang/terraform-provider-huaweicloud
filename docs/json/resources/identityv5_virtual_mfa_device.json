@@ -7,10 +7,12 @@
             "attributes": {
               "base32_string_seed": {
                 "type": "string",
+                "description": "The key information used for third-party generation of image verification codes",
                 "computed": true
               },
               "enabled": {
                 "type": "bool",
+                "description": "Whether the MFA device is enabled.",
                 "computed": true
               },
               "id": {
@@ -19,10 +21,12 @@
               },
               "name": {
                 "type": "string",
+                "description": "The name of the MFA device",
                 "required": true
               },
               "user_id": {
                 "type": "string",
+                "description": "The ID of the user",
                 "required": true
               }
             }

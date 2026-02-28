@@ -25,17 +25,17 @@
               },
               "mapping_id": {
                 "type": "string",
-                "description": "When the identity provider type is `iam_user_sso`, there is no need to bind a mapping ID, and this field does not need to be passed; otherwise, this field is mandatory.",
+                "description": "The mapping_id for the protocol.",
                 "optional": true
               },
               "protocol_id": {
                 "type": "string",
-                "description": "The protocol ID to be registered. The content of this field is `saml` or `oidc`.",
+                "description": "The identity protocol of the identity provider.",
                 "required": true
               },
               "provider_id": {
                 "type": "string",
-                "description": "Name of an identity provider.",
+                "description": "The ID of the identity provider used to manage the protocol.",
                 "required": true
               }
             }

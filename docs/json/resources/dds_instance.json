@@ -289,6 +289,13 @@
               "flavor": {
                 "block": {
                   "attributes": {
+                    "node_list": {
+                      "type": [
+                        "list",
+                        "string"
+                      ],
+                      "optional": true
+                    },
                     "num": {
                       "type": "number",
                       "required": true

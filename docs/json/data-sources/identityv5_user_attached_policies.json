@@ -26,6 +26,7 @@
               },
               "user_id": {
                 "type": "string",
+                "description": "The ID of the IAM user.",
                 "required": true
               }
             }

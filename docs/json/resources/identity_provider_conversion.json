@@ -11,6 +11,7 @@
               },
               "provider_id": {
                 "type": "string",
+                "description": "The ID of the identity provider used to manage the conversion rules.",
                 "required": true,
                 "forcenew": true
               }
@@ -24,13 +25,16 @@
                         "attributes": {
                           "group": {
                             "type": "string",
+                            "description": "The user group to which the federated user belongs on the\n                                               cloud platform.",
                             "optional": true
                           },
                           "username": {
                             "type": "string",
+                            "description": "The name of a federated user on the cloud platform.",
                             "optional": true
                           }
-                        }
+                        },
+                        "description": "The federated user information on the cloud platform."
                       },
                       "nesting_mode": "list",
                       "min_items": 1
@@ -40,10 +44,12 @@
                         "attributes": {
                           "attribute": {
                             "type": "string",
+                            "description": "The attribute in the IDP assertion.",
                             "required": true
                           },
                           "condition": {
                             "type": "string",
+                            "description": "The condition of conversion rule.",
                             "optional": true
                           },
                           "value": {
@@ -51,14 +57,17 @@
                               "list",
                               "string"
                             ],
+                            "description": "The rule is matched only if the specified strings appear in the\n                                            attribute type.",
                             "optional": true
                           }
-                        }
+                        },
+                        "description": "Federated user information in the IDP system."
                       },
                       "nesting_mode": "list",
                       "min_items": 1
                     }
-                  }
+                  },
+                  "description": "The identity conversion rules of the identity provider."
                 },
                 "nesting_mode": "list",
                 "min_items": 1

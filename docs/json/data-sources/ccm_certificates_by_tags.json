@@ -1,0 +1,191 @@
+{
+  "provider_schemas": {
+    "huaweicloud/huaweicloud": {
+      "data_source_schemas": {
+        "huaweicloud_ccm_certificates_by_tags": {
+          "block": {
+            "attributes": {
+              "action": {
+                "type": "string",
+                "required": true
+              },
+              "id": {
+                "type": "string",
+                "computed": true
+              },
+              "region": {
+                "type": "string",
+                "computed": true
+              },
+              "resource_instances": {
+                "type": "string",
+                "required": true
+              },
+              "resources": {
+                "type": [
+                  "list",
+                  [
+                    "object",
+                    {
+                      "resource_detail": [
+                        "list",
+                        [
+                          "object",
+                          {
+                            "auto_deploy_support": "bool",
+                            "auto_renew_status": "number",
+                            "cert_brand": "string",
+                            "cert_des": "string",
+                            "cert_id": "string",
+                            "cert_issued_time": "string",
+                            "cert_name": "string",
+                            "cert_type": "string",
+                            "domain": "string",
+                            "domain_num": "number",
+                            "domain_type": "string",
+                            "enterprise_project_id": "string",
+                            "expired_time": "string",
+                            "fail_reason": "string",
+                            "order_status": "string",
+                            "origin_cert_id": "string",
+                            "partner_order_id": "string",
+                            "purchase_period": "number",
+                            "push_support": "bool",
+                            "remain_cert_number": "number",
+                            "renewal_cert_id": "string",
+                            "resource_id": "string",
+                            "sans": "string",
+                            "signature_algorithm": "string",
+                            "unsubscribe_support": "bool",
+                            "wildcard_number": "number"
+                          }
+                        ]
+                      ],
+                      "resource_id": "string",
+                      "resource_name": "string",
+                      "tags": [
+                        "list",
+                        [
+                          "object",
+                          {
+                            "key": "string",
+                            "value": "string"
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                ],
+                "computed": true
+              },
+              "total_count": {
+                "type": "number",
+                "computed": true
+              },
+              "without_any_tag": {
+                "type": "bool",
+                "optional": true
+              }
+            },
+            "block_types": {
+              "matches": {
+                "block": {
+                  "attributes": {
+                    "key": {
+                      "type": "string",
+                      "optional": true
+                    },
+                    "value": {
+                      "type": "string",
+                      "optional": true
+                    }
+                  }
+                },
+                "nesting_mode": "list"
+              },
+              "not_tags": {
+                "block": {
+                  "attributes": {
+                    "key": {
+                      "type": "string",
+                      "optional": true
+                    },
+                    "values": {
+                      "type": [
+                        "list",
+                        "string"
+                      ],
+                      "optional": true
+                    }
+                  }
+                },
+                "nesting_mode": "list"
+              },
+              "not_tags_any": {
+                "block": {
+                  "attributes": {
+                    "key": {
+                      "type": "string",
+                      "optional": true
+                    },
+                    "values": {
+                      "type": [
+                        "list",
+                        "string"
+                      ],
+                      "optional": true
+                    }
+                  }
+                },
+                "nesting_mode": "list"
+              },
+              "tags": {
+                "block": {
+                  "attributes": {
+                    "key": {
+                      "type": "string",
+                      "optional": true
+                    },
+                    "values": {
+                      "type": [
+                        "list",
+                        "string"
+                      ],
+                      "optional": true
+                    }
+                  }
+                },
+                "nesting_mode": "list"
+              },
+              "tags_any": {
+                "block": {
+                  "attributes": {
+                    "key": {
+                      "type": "string",
+                      "optional": true
+                    },
+                    "values": {
+                      "type": [
+                        "list",
+                        "string"
+                      ],
+                      "optional": true
+                    }
+                  }
+                },
+                "nesting_mode": "list"
+              }
+            }
+          },
+          "product": {
+            "short": "CCM",
+            "name": "Cloud Certificate & Manager",
+            "catalog": "Security & Compliance",
+            "name_cn": "云证书与管理服务",
+            "catalog_cn": "安全与合规"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "provider_schemas": {
+    "huaweicloud/huaweicloud": {
+      "resource_schemas": {
+        "huaweicloud_identityv5_policy": {
+          "block": {
+            "attributes": {
+              "attachment_count": {
+                "type": "number",
+                "description": "The attachment count of the identity policy.",
+                "computed": true
+              },
+              "created_at": {
+                "type": "string",
+                "description": "The creation time of the identity policy.",
+                "computed": true
+              },
+              "default_version_id": {
+                "type": "string",
+                "description": "The default version ID of the identity policy.",
+                "computed": true
+              },
+              "description": {
+                "type": "string",
+                "description": "The description of the identity policy.",
+                "optional": true
+              },
+              "id": {
+                "type": "string",
+                "computed": true
+              },
+              "name": {
+                "type": "string",
+                "description": "The name of the identity policy.",
+                "required": true
+              },
+              "path": {
+                "type": "string",
+                "description": "The resource path of the identity policy.",
+                "optional": true
+              },
+              "policy_document": {
+                "type": "string",
+                "description": "The policy document of the identity policy, in JSON format.",
+                "required": true
+              },
+              "type": {
+                "type": "string",
+                "description": "The type of the identity policy.",
+                "computed": true
+              },
+              "updated_at": {
+                "type": "string",
+                "description": "The latest update time of the identity policy.",
+                "computed": true
+              },
+              "urn": {
+                "type": "string",
+                "description": "The URN of the identity policy.",
+                "computed": true
+              },
+              "version_ids": {
+                "type": [
+                  "list",
+                  "string"
+                ],
+                "description": "The version ID list of the identity policy.",
+                "computed": true
+              },
+              "version_to_delete": {
+                "type": "string",
+                "description": "The ID of the policy version to be deleted.",
+                "optional": true
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

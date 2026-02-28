@@ -139,6 +139,14 @@
                 "description": "The certificate status.",
                 "computed": true
               },
+              "tags": {
+                "type": [
+                  "map",
+                  "string"
+                ],
+                "optional": true,
+                "computed": true
+              },
               "validation_method": {
                 "type": "string",
                 "description": "The authentication method of domain name.",

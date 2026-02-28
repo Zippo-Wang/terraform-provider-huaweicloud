@@ -49,6 +49,7 @@
                     }
                   ]
                 ],
+                "description": "The list of authorization items supported by the cloud service.",
                 "computed": true
               },
               "conditions": {
@@ -73,6 +74,7 @@
                     }
                   ]
                 ],
+                "description": "The list of condition keys supported by the cloud service.",
                 "computed": true
               },
               "id": {
@@ -94,6 +96,7 @@
                     }
                   ]
                 ],
+                "description": "The list of operations supported by the cloud service.",
                 "computed": true
               },
               "resources": {
@@ -107,14 +110,17 @@
                     }
                   ]
                 ],
+                "description": "The list of resources supported by the cloud service.",
                 "computed": true
               },
               "service_code": {
                 "type": "string",
+                "description": "The service name abbreviation to be queried.",
                 "required": true
               },
               "version": {
                 "type": "string",
+                "description": "The version number of the service authorization summary.",
                 "computed": true
               }
             }

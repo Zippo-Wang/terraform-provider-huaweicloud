@@ -1,0 +1,75 @@
+{
+  "provider_schemas": {
+    "huaweicloud/huaweicloud": {
+      "data_source_schemas": {
+        "huaweicloud_oms_sync_task_statistics": {
+          "block": {
+            "attributes": {
+              "data_type": {
+                "type": "string",
+                "required": true
+              },
+              "end_time": {
+                "type": "string",
+                "required": true
+              },
+              "id": {
+                "type": "string",
+                "computed": true
+              },
+              "region": {
+                "type": "string",
+                "computed": true
+              },
+              "start_time": {
+                "type": "string",
+                "required": true
+              },
+              "statistic_datas": {
+                "type": [
+                  "list",
+                  [
+                    "object",
+                    {
+                      "data": [
+                        "list",
+                        [
+                          "object",
+                          {
+                            "statistic_num": "number",
+                            "time_stamp": "number"
+                          }
+                        ]
+                      ],
+                      "data_type": "string"
+                    }
+                  ]
+                ],
+                "computed": true
+              },
+              "statistic_time_type": {
+                "type": "string",
+                "computed": true
+              },
+              "sync_task_id": {
+                "type": "string",
+                "required": true
+              },
+              "task_id": {
+                "type": "string",
+                "computed": true
+              }
+            }
+          },
+          "product": {
+            "short": "OMS",
+            "name": "Object Storage Migration Service",
+            "catalog": "Migration",
+            "name_cn": "对象存储迁移服务",
+            "catalog_cn": "迁移"
+          }
+        }
+      }
+    }
+  }
+}

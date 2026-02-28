@@ -17,11 +17,13 @@
               "app_key": {
                 "type": "string",
                 "description": "The APP key.",
+                "optional": true,
                 "computed": true
               },
               "app_secret": {
                 "type": "string",
                 "description": "The APP secret.",
+                "optional": true,
                 "computed": true,
                 "sensitive": true
               },
